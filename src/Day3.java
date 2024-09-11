@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Day3 {
     public static void main(String[] args) {
         float age1 = 12.12345687f; // A float shows up to 7 decimal digits of precision
@@ -56,5 +57,38 @@ public class Day3 {
    System.out.println("Greater than or equal to: " + (x >= y)); // true
    System.out.println("Less than or equal to: " + (x <= y));    // false
 
+
+   //Scanner class is a part of the java.util package and provides methods to read different types of input
+   
+    Scanner scanner = new Scanner(System.in);
+    // Input two integers
+    System.out.print("Enter first integer: ");
+    int numb1 = scanner.nextInt();
+    System.out.print("Enter second integer: ");
+    int numb2 = scanner.nextInt();
+    System.out.println("Addition: " + (numb1 + numb2));
+    System.out.println("Subtraction: " + (numb1 - numb2));
+    System.out.println("Multiplication: " + (numb1 * numb2));
+    System.out.println("Division: " + (numb1 / numb2));
+    System.out.println("Modulus: " + (numb1 % numb2));
+
+    // problem no 2 // Create a Scanner object to read input
+        Scanner scanner1 = new Scanner(System.in);
+
+        // Prompt the user for input
+        System.out.print("Enter your name: ");
+        String name = scanner1.nextLine();  // Read a line of text
+
+        System.out.print("Enter your age: ");
+        int age = scanner1.nextInt();  // Read an integer
+
+        // Display the input
+        System.out.println("Hello, " + name + "!");
+        System.out.println("You are " + age + " years old.");
+
+        // Close the Scanner
+        scanner.close();
+        scanner1.close();
+  
     }
 }
