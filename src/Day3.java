@@ -57,9 +57,19 @@ public class Day3 {
    System.out.println("Greater than or equal to: " + (x >= y)); // true
    System.out.println("Less than or equal to: " + (x <= y));    // false
 
+// problem no 2 find the profit percentage where the SP is 300, cp is 200.
+   
+double SP = 300;
+double CP = 200;
+double profit = SP-CP;
+System.out.println("Profit:"+profit);
+
+double profitPercentage = (profit/CP)*100;
+System.out.println("profitPercentage :" + profitPercentage);
+
 
    //Scanner class is a part of the java.util package and provides methods to read different types of input
-   
+
     Scanner scanner = new Scanner(System.in);
     // Input two integers
     System.out.print("Enter first integer: ");
@@ -72,7 +82,7 @@ public class Day3 {
     System.out.println("Division: " + (numb1 / numb2));
     System.out.println("Modulus: " + (numb1 % numb2));
 
-    // problem no 2 // Create a Scanner object to read input
+    // problem no 3 // Create a Scanner object to read input
         Scanner scanner1 = new Scanner(System.in);
 
         // Prompt the user for input
