@@ -14,6 +14,15 @@ public class Day3 {
        System.out.println(num2);  // Output will be 9 (fraction part is lost)
 
     //    int num = (int) true;  // Compilation error: incompatible types
+          
+    //    problem no 1
+    // Perform implicit conversion of number to result wher int var num with the value 15 and double var result and then perform explicit conversion to convert the result back to int.
+    
+    int s = 15;
+    double k = s;
+    int b = (int)k;
+   System.out.println("implicit:"+k);
+   System.out.println("explicit:"+b);
   
 
     }
