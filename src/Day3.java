@@ -96,9 +96,18 @@ System.out.println("profitPercentage :" + profitPercentage);
         System.out.println("Hello, " + name + "!");
         System.out.println("You are " + age + " years old.");
 
+      Scanner name1 = new Scanner(System.in);
+      String namee = name1.nextLine();
+      System.out.println("Enter your Name");
+      System.out.println("your name is " + namee);
+
         // Close the Scanner
         scanner.close();
         scanner1.close();
+        name1.close();
+
+
+
   
     }
 }
