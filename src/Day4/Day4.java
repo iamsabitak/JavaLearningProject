@@ -4,48 +4,50 @@ import java.util.Scanner;
 
 public class Day4 {
     public static void main(String[] args) {
+
         // if statement
         int age = 18;
-     if (age >= 18) {
-    System.out.println("You are an adult.");
-   }
+        if (age >= 18) {
+            System.out.println("You are an adult.");
+        }
 
-//    if-else statement
- if (age <= 17) {
-    System.out.println("You are an minor.");
-} else {
-    System.out.println("You are a adult.");
-}
-// else-if 
-int marks = 85;
-if (marks >= 90) {
-    System.out.println("Grade A");
-} else if (marks >= 80) {
-    System.out.println("Grade B");
-} else if (marks >= 70) {
-    System.out.println("Grade C");
-} else {
-    System.out.println("Fail");
-}
+        // if-else statement
+        if (age <= 17) {
+            System.out.println("You are an minor.");
+        } else {
+            System.out.println("You are a adult.");
+        }
 
-// switch statement
-int day = 0;
-switch (day) {
-    case 1:
-        System.out.println("Monday");
-        break;
-    case 2:
-        System.out.println("Tuesday");
-        break;
-    case 3:
-        System.out.println("Wednesday");
-        break;
-    default:
-        System.out.println("Invalid day");
-}
+        // else-if
+        int marks = 85;
+        if (marks >= 90) {
+            System.out.println("Grade A");
+        } else if (marks >= 80) {
+            System.out.println("Grade B");
+        } else if (marks >= 70) {
+            System.out.println("Grade C");
+        } else {
+            System.out.println("Fail");
+        }
 
-    // Problem no 1 Write a program that checks if a number is even or odd.
- Scanner scanner = new Scanner(System.in);
+        // switch statement
+        int day = 0;
+        switch (day) {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            default:
+                System.out.println("Invalid day");
+        }
+
+        // Problem no 1 Write a program that checks if a number is even or odd.
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter a number: ");
         int number = scanner.nextInt();
@@ -55,13 +57,13 @@ switch (day) {
         } else {
             System.out.println(number + " is odd.");
         }
-       
-      //Problem no 2 Program to Compare Two Numbers
+
+        // Problem no 2 Program to Compare Two Numbers
         Scanner scanner1 = new Scanner(System.in);
 
         System.out.print("Enter the first number: ");
         int num1 = scanner1.nextInt();
-        
+
         System.out.print("Enter the second number: ");
         int num2 = scanner1.nextInt();
 
@@ -73,7 +75,7 @@ switch (day) {
             System.out.println(num1 + " is less than " + num2 + ".");
         }
 
-          //Problem 3 Java Program to Check Voting Eligibility
+        // Problem 3 Java Program to Check Voting Eligibility
         Scanner scanner2 = new Scanner(System.in);
         System.out.print("Enter your age: ");
         int agee = scanner2.nextInt();
@@ -83,11 +85,25 @@ switch (day) {
             System.out.println("You are not eligible to vote.");
         }
 
+        // Problem no 7 Write a program that takes a number as input and checks whether
+        // it is positive, negative, or zero.
+
+        Scanner scanner3 = new Scanner(System.in);
+        System.out.println("Enter the Number :");
+        int numbers = scanner3.nextInt();
+
+        if (numbers < 0) {
+            System.out.println("The number " + numbers + " is Negative");
+        } else if (numbers == 0) {
+            System.out.println("The number " + numbers + " is Zero");
+        } else {
+            System.out.println("The number " + numbers + " is Positive");
+        }
+
         scanner.close();
-
         scanner1.close();
-
         scanner2.close();
-  
+        scanner3.close();
+
     }
 }
