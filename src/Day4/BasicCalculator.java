@@ -30,7 +30,7 @@ public class BasicCalculator {
                 System.out.println(numb1 * numb2);
                 break;
             default:
-                System.out.println("Invalid operator. Please choose +, -, *, or /.");
+                System.out.println("Invalid operator. choose +, -, *, or /.");
         }
 
         scanner.close();
