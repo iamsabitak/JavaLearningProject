@@ -82,7 +82,55 @@ public class Day5 {
 
         System.out.println(resultY);
 
+
+        // loop
+        // ForLoopExample
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("ForLoopExample : "+i);
+        }
+
+        // WhileLoopExample
+        int i = 1;
+        // Print numbers from 1 to 5
+        while (i <= 5) {
+            System.out.println("WhileLoopExample : "+i);
+            i++; // Increment the counter
+        }
+
+        // DoWhileLoopExample
+        do {
+            System.out.println("DoWhileLoopExample : "+i);
+            i++; 
+        } while (i <= 5);
+    
+        // ForEachLoopExample
+        int[] numbers = {1, 2, 3, 4, 5};
         
+        // Print each number in the array
+        for (int numb : numbers) {
+            System.out.println("ForEachLoopExample : "+numb);
+        }
+
+        // Problem 1: Write a program that prints the first 10 natural numbers.
+        System.out.println("First 10 natural numbers using for loop:");
+        for (int j = 1; j <= 10; j++) {
+            System.out.println(j);
+        }
+
+        System.out.println("First 10 natural numbers using while loop:");
+        int j = 1;
+        while (j <= 10) {
+            System.out.println(j);
+            j++;
+        }
+
+        System.out.println("First 10 natural numbers using do-while loop:");
+        // int j = 1;
+        do {
+            System.out.println(j);
+            i++;
+        } while (j <= 10);
+
         yr.close();
         sc.close();
     }
