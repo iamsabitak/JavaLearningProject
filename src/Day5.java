@@ -14,48 +14,52 @@ public class Day5 {
 
         // else if
 
-        // if (opertaor == '+') {
-        //     double result = a + b;
-        //     System.out.println("Addition : " + result);
-        // } else if (opertaor == '-') {
-        //     double result = a - b;
-        //     System.out.println("Subtraction : " + result);
-        // } else if (opertaor == '/') {
-        //     double result = a / b;
-        //     System.out.println("Division : " + result);
-        // } else if (opertaor == '*') {
-        //     double result = a * b;
-        //     System.out.println("Multiplication : " + result);
-        // } else {
-        //     System.out.println("Invalid opertaor");
-        // }
+        if (opertaor == '+') {
+            double result = a + b;
+            System.out.println("Addition : " + result);
+        } else if (opertaor == '-') {
+            double result = a - b;
+            System.out.println("Subtraction : " + result);
+        } else if (opertaor == '/') {
+            double result = a / b;
+            System.out.println("Division : " + result);
+        } else if (opertaor == '*') {
+            double result = a * b;
+            System.out.println("Multiplication : " + result);
+        } else {
+            System.out.println("Invalid opertaor");
+        }
 
         // using Switch
-        switch (opertaor) {
-            case '+': {
-                double result = a + b;
-                System.out.println("Addition : " + result);
-                break;
-            }
-            case '-': {
-                double result = a - b;
-                System.out.println("Subtraction : " + result);
-                break;
-            }
-            case '*': {
-                double result = a * b;
-                System.out.println("Multiplication : " + result);
-                break;
-            }
-            case '/': {
-                double result = a / b;
-                System.out.println("Division : " + result);
-                break;
-            }
-            default:
-                System.out.println("Invalid operator");
+        // switch (opertaor) {
+        //     case '+': {
+        //         double result = a + b;
+        //         System.out.println("Addition : " + result);
+        //         break;
+        //     }
+        //     case '-': {
+        //         double result = a - b;
+        //         System.out.println("Subtraction : " + result);
+        //         break;
+        //     }
+        //     case '*': {
+        //         double result = a * b;
+        //         System.out.println("Multiplication : " + result);
+        //         break;
+        //     }
+        //     case '/': {
+        //         double result = a / b;
+        //         System.out.println("Division : " + result);
+        //         break;
+        //     }
+        //     default:
+        //         System.out.println("Invalid operator");
 
-        }
+        // }
+
+      
+
+
         sc.close();
     }
 }
