@@ -1,4 +1,5 @@
 package Day10;
+
 public class Day10 {
 
     public static void main(String[] args) {
@@ -54,13 +55,11 @@ public class Day10 {
         } while (j <= 10);
 
         // For loop: Calculate the sum of numbers from 1 to 5, but break when number is3
-
         int sum = 0;
         System.out.println("\nUsing for loop with break:");
         for (int k = 1; k <= 5; k++) {
             if (k == 3) {
                 break;
-
             }
             sum += k;
         }
@@ -127,6 +126,6 @@ public class Day10 {
             }
             System.out.println();
         }
-        
+
     }
 }
