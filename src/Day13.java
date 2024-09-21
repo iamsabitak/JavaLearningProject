@@ -65,6 +65,71 @@ class Student {
     }
 }
 
+class Rectangle {
+
+    private final double length;
+    private final double breadth;
+
+    public Rectangle(double length, double breadth) {
+        this.length = length;
+        this.breadth = breadth;
+    }
+
+    public double calculateArea() {
+        return length * breadth;
+    }
+
+    public double calculatePerimeter() {
+        return 2 * (length + breadth);
+    }
+
+    public void printDetails() {
+        System.out.println("Length: " + length);
+        System.out.println("Breadth: " + breadth);
+        System.out.println("Area: " + calculateArea());
+        System.out.println("Perimeter: " + calculatePerimeter());
+    }
+}
+
+class Personn {
+    private String name;
+    private int age;
+
+    public Personn(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public void show() {
+        System.out.println("Person's name: " + this.name);
+        System.out.println("Person's age: " + this.age);
+    }
+
+    public Personn setName(String name) {
+        this.name = name;
+        return this;
+    }
+
+    public Personn setAge(int age) {
+        this.age = age;
+        return this;
+    }
+}
+
+class Animal {
+    public void sound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    public void sound() {
+        super.sound();
+        System.out.println("Dog barks");
+    }
+}
+
 public class Day13 {
     public static void main(String[] args) {
         // Problem 1: Create Person objects and print their details
@@ -84,5 +149,18 @@ public class Day13 {
         Student student = new Student(85, 90, 78); // Marks of three subjects
         System.out.println("\nStudent Details:");
         student.printStudentDetails();
+
+        Rectangle rectangle = new Rectangle(5.0, 3.0);
+        System.out.println("Rectangle Details:");
+        rectangle.printDetails();
+
+        Personn personn = new Personn("John", 25);
+        personn.show();
+
+        personn.setName("Alice").setAge(30).show();
+
+        Dog dog = new Dog();
+        System.out.println("\nDog Sound:");
+        dog.sound();
     }
 }
