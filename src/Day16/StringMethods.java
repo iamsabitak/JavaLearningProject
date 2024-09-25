@@ -51,5 +51,26 @@ public class StringMethods {
         System.out.println("19. Value of number 10: " + String.valueOf(number));
 
         System.out.println("20. Contains 'World': " + str.contains("World"));
+
+        // checks if two strings have the same sequence of characters.
+        String str1 = "Hello";
+        String str2 = "Hello";
+
+        if (str1.equals(str2)) {
+            System.out.println("Strings are equal.");
+        } else {
+            System.out.println("Strings are not equal.");
+        }
+
+        // method compares two strings, ignoring case considerations.
+        String strr1 = "Hello";
+        String strr2 = "hello";
+
+        if (strr1.equalsIgnoreCase(strr2)) {
+            System.out.println("Strings are equal (case ignored).");
+        } else {
+            System.out.println("Strings are not equal.");
+        }
+
     }
 }
