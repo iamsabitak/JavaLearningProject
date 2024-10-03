@@ -16,6 +16,22 @@ class Person {
     }
 }
 
+class Car {
+    String model; // Instance variable (Heap memory)
+    int year;
+
+    // Constructor
+    public Car(String model, int year) {
+        this.model = model;
+        this.year = year;
+    }
+
+    // Method to display car details
+    public void display() {
+        System.out.println("Model: " + model + ", Year: " + year);
+    }
+}
+
 public class MemoryExample {
     public static void main(String[] args) {
         Person person1 = new Person("John", 25);
@@ -25,10 +41,21 @@ public class MemoryExample {
         person1.display();
 
         person2.display();
+        Car car1 = new Car("Tesla", 2020);
+        Car car2 = new Car("BMW", 2018);
+
+        car1.display();
+        car2.display();
+
+        modifyCar(car1);
+        car1.display();
     }
 
-    // Method that modifies the object's age
     public static void changeAge(Person p) {
-        p.age = 30; // Changing age through heap reference
+        p.age = 30;
+    }
+
+    public static void modifyCar(Car c) {
+        c.model = "Tesla Model X";
     }
 }
