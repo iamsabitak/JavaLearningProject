@@ -1,6 +1,6 @@
 package Day24;
 
-@FunctionalInterface
+// @FunctionalInterface
 interface StringConcatenator {
     String concatenate(String str1, String str2);
 }
