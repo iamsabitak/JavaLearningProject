@@ -2,6 +2,7 @@ package Day25;
 
 import java.util.Scanner;
 
+// 1 Revision Program
 public class Revision {
 
     // 2. Variables and Data Types
