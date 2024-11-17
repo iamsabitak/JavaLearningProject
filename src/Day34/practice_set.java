@@ -1,4 +1,4 @@
-package Day33;
+package Day34;
 import java.util.Scanner;
 
 public class practice_set {

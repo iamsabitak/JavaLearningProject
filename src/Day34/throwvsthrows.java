@@ -1,4 +1,4 @@
-package Day33;
+package Day34;
 public class throwvsthrows {
     public static double area(int r) throws NegativeRadiusException{
         if (r<0){
